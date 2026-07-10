@@ -45,9 +45,14 @@ function convertWeight() {
 }
 
 function convertTemperature() {
-  const input = document.getElementById('temperatureInput').value;
+  const input = parseFloat(document.getElementById('temperatureInput').value);
   const fromUnit = document.getElementById('fromUnit').value;
   const toUnit = document.getElementById('toUnit').value;
+
+  if (Number.isNaN(input)) {
+    document.getElementById('temperatureOutput').value = '';
+    return;
+  }
 
   // Convert input to Celsius
   let inputInCelsius;       
