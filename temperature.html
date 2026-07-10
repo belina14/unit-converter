@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Unit Converter - Temperature</title>
+</head>
+
+<body>
+<h1>Unit Converter</h1>
+
+<div class="tab">
+  <button class="tablinks" onclick="location.href='length.html'">Length</button>
+  <button class="tablinks" onclick="location.href='weight.html'">Weight</button>
+  <button class="tablinks active" onclick="location.href='temperature.html'">Temperature</button>
+</div>
+
+<form>
+<div>
+<input type="number" id="temperatureInput" placeholder="Enter value">
+<select>
+  <option id="c" value="c">Celsius</option>
+  <option id="f" value="f">Fahrenheit</option>
+  <option id="k" value="k">Kelvin</option>
+</select>
+</div>
+
+<div>
+<input type="number" id="temperatureOutput" value="0" readonly>
+<select>
+  <option id="c" value="c">Celsius</option>
+  <option id="f" value="f">Fahrenheit</option>
+  <option id="k" value="k">Kelvin</option>
+</select>
+</div>
+<input type="button" value="Convert" onclick="convertTemperature()">
+</form>
+
+</body>
+
+</html>
