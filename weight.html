@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Unit Converter - Weight</title>
 </head>
 
@@ -15,31 +16,35 @@
   <button class="tablinks" onclick="location.href='temperature.html'">Temperature</button>
 </div>
 
+<section class="card">
 <form>
 <div>
 <input type="number" id="weightInput" placeholder="Enter value">
-<select>
-  <option id="g" value="g">Grams</option>
-  <option id="kg" value="kg">Kilograms</option>
-  <option id="mt" value="mt">Metric Tons</option>
-  <option id="oz" value="oz">Ounces</option>
-  <option id="lb" value="lb">Pounds</option>
+<select id="fromUnit" class="dropdown">
+  <option value="g">Grams</option>
+  <option value="kg">Kilograms</option>
+  <option value="mt">Metric Tons</option>
+  <option value="oz">Ounces</option>
+  <option value="lb">Pounds</option>
 </select>
 </div>
 
 <div>
 <input type="number" id="weightOutput" value="0" readonly>
-<select>
-  <option id="g" value="g">Grams</option>
-  <option id="kg" value="kg">Kilograms</option>
-  <option id="mt" value="mt">Metric Tons</option>
-  <option id="oz" value="oz">Ounces</option>
-  <option id="lb" value="lb">Pounds</option>
+<select id="toUnit" class="dropdown">
+  <option value="g">Grams</option>
+  <option value="kg">Kilograms</option>
+  <option value="mt">Metric Tons</option>
+  <option value="oz">Ounces</option>
+  <option value="lb">Pounds</option>
 </select>
 </div>
-<input type="button" value="Convert" onclick="convertWeight()">
+<input type="button" value="Convert" onclick="convertWeight()" class="convert-button"   >
 </form>
+</section>
 
 </body>
+
+<script src="script.js"></script>
 
 </html>

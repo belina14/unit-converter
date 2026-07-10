@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Unit Converter - Length</title>
 </head>
 
@@ -15,30 +16,32 @@
   <button class="tablinks" onclick="location.href='temperature.html'">Temperature</button>
 </div>
 
+<section class="card">
 <form>
 <div>
 <input type="number" id="lengthInput" placeholder="Enter value">
-<select>
-  <option id="cm" value="cm">Centimeters</option>
-  <option id="m" value="m">Meters</option>
-  <option id="km" value="km">Kilometers</option>
-  <option id="in" value="in">Inches</option>
-  <option id="ft" value="ft">Feet</option>
+<select id="fromUnit" class="dropdown">
+  <option value="cm">Centimeters</option>
+  <option value="m">Meters</option>
+  <option value="km">Kilometers</option>
+  <option value="in">Inches</option>
+  <option value="ft">Feet</option>
 </select>
 </div>
 
 <div>
 <input type="number" id="lengthOutput" value="0" readonly>
-<select>
-  <option id="cm" value="cm">Centimeters</option>
-  <option id="m" value="m">Meters</option>
-  <option id="km" value="km">Kilometers</option>
-  <option id="in" value="in">Inches</option>
-  <option id="ft" value="ft">Feet</option>
+<select id="toUnit" class="dropdown">
+  <option value="cm">Centimeters</option>
+  <option value="m">Meters</option>
+  <option value="km">Kilometers</option>
+  <option value="in">Inches</option>
+  <option value="ft">Feet</option>
 </select>
 </div>
-<input type="button" value="Convert" onclick="convertLength()">
+<input type="button" value="Convert" onclick="convertLength()" class="convert-button"  >
 </form>
+</section>
 
 </body>
 

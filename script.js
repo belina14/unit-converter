@@ -51,25 +51,25 @@ function convertTemperature() {
 
   // Convert input to Celsius
   let inputInCelsius;       
-    if (fromUnit === 'C') {
+    if (fromUnit === 'c') {
         inputInCelsius = input;
     } 
-    else if (fromUnit === 'F') {
+    else if (fromUnit === 'f') {
         inputInCelsius = (input - 32) * (5 / 9);
     }
-    else if (fromUnit === 'K') {
+    else if (fromUnit === 'k') {
         inputInCelsius = input - 273.15;
     }
 
     // Convert to desired unit
     let result;
-    if (toUnit === 'C') {
+    if (toUnit === 'c') {
         result = inputInCelsius;
     } 
-    else if (toUnit === 'F') {
+    else if (toUnit === 'f') {
         result = (inputInCelsius * (9 / 5)) + 32;
     }
-    else if (toUnit === 'K') {
+    else if (toUnit === 'k') {
         result = inputInCelsius + 273.15;
     }
 

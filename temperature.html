@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Unit Converter - Temperature</title>
 </head>
 
@@ -15,27 +16,31 @@
   <button class="tablinks active" onclick="location.href='temperature.html'">Temperature</button>
 </div>
 
+<section class="card">
 <form>
 <div>
 <input type="number" id="temperatureInput" placeholder="Enter value">
-<select>
-  <option id="c" value="c">Celsius</option>
-  <option id="f" value="f">Fahrenheit</option>
-  <option id="k" value="k">Kelvin</option>
+<select id="fromUnit" class="dropdown">
+  <option value="c">Celsius</option>
+  <option value="f">Fahrenheit</option>
+  <option value="k">Kelvin</option>
 </select>
 </div>
 
 <div>
 <input type="number" id="temperatureOutput" value="0" readonly>
-<select>
-  <option id="c" value="c">Celsius</option>
-  <option id="f" value="f">Fahrenheit</option>
-  <option id="k" value="k">Kelvin</option>
+<select id="toUnit" class="dropdown">
+  <option value="c">Celsius</option>
+  <option value="f">Fahrenheit</option>
+  <option value="k">Kelvin</option>
 </select>
 </div>
-<input type="button" value="Convert" onclick="convertTemperature()">
+<input type="button" value="Convert" onclick="convertTemperature()" class="convert-button"  >
 </form>
+</section>
 
 </body>
+
+<script src="script.js"></script>
 
 </html>
